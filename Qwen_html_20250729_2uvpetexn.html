@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pesquisa - InstaAvalia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+    .question {
+      margin: 25px 0;
+      text-align: left;
+    }
+    button {
+      background-color: #2196F3;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1em;
+      display: block;
+      width: 100%;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📝 Pesquisa de Satisfação do Instagram</h2>
+    <p>Obrigado por participar! Sua opinião ajuda a melhorar a plataforma.</p>
+
+    <div class="question">
+      <p><strong>1. Com que frequência você usa o Instagram?</strong></p>
+      <select required>
+        <option>Diariamente</option>
+        <option>Várias vezes por semana</option>
+        <option>Uma vez por semana</option>
+        <option>Raramente</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <p><strong>2. Você confia nos anúncios que vê no app?</strong></p>
+      <label><input type="radio" name="confianca"> Sim</label><br>
+      <label><input type="radio" name="confianca"> Não</label><br>
+      <label><input type="radio" name="confianca"> Parcialmente</label>
+    </div>
+
+    <div class="question">
+      <p><strong>3. Qual melhoria você gostaria de ver no Instagram?</strong></p>
+      <input type="text" placeholder="Ex: menos anúncios, mais privacidade...">
+    </div>
+
+    <button onclick="finalizarPesquisa()">
+      Enviar e Receber Recompensa
+    </button>
+  </div>
+
+  <script>
+    function finalizarPesquisa() {
+      alert('Obrigado! Sua resposta foi registrada.');
+      window.location.href = 'saque.html';
+    }
+  </script>
+
+  <footer>
+    © 2025 InstaAvalia - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
